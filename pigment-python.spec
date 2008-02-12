@@ -23,7 +23,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 %if %svn
 BuildRequires:	autoconf
 %endif
-BuildRequires:	libgstreamer0.10-devel
+BuildRequires:	gstreamer0.10-devel
 BuildRequires:	libgstreamer0.10-plugins-base-devel
 BuildRequires:	gstreamer0.10-python
 BuildRequires:	glib2-devel
