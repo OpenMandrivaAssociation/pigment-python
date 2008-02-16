@@ -9,7 +9,7 @@
 
 Summary:	Python bindings for Pigment
 Name:		pigment-python
-Version:	0.3.2
+Version:	0.3.2.1
 Release:	%{release}
 %if %svn
 Source0:	%{name}-%{svn}.tar.lzma
@@ -27,9 +27,10 @@ BuildRequires:	gstreamer0.10-devel
 BuildRequires:	libgstreamer0.10-plugins-base-devel
 BuildRequires:	gstreamer0.10-python
 BuildRequires:	glib2-devel
-BuildRequires:	gdk-pixbuf-devel
+BuildRequires:	libgdk_pixbuf2.0-devel
 BuildRequires:	python-devel
 BuildRequires:	python-gobject
+BuildRequires:	python-pyxml
 BuildRequires:	pygtk2.0-devel
 BuildRequires:	pigment-devel
 BuildRequires:	libpigment-devel
@@ -77,4 +78,4 @@ rm -rf %{buildroot}
 %files devel
 %defattr(-,root,root)
 %{py_platsitedir}/*.la
-%{_datadir}/%{name}/%{fversion}/examples
+%{_datadir}/%{name}
