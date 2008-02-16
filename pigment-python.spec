@@ -1,6 +1,6 @@
 %define	fversion	0.3
 
-%define svn	0
+%define svn	1073
 %if %svn
 %define release	%mkrel 0.%svn.1
 %else
@@ -12,7 +12,7 @@ Name:		pigment-python
 Version:	0.3.2
 Release:	%{release}
 %if %svn
-Source0:	%{name}-%{svn}.tar.bz2
+Source0:	%{name}-%{svn}.tar.lzma
 %else
 Source0:	http://elisa.fluendo.com/static/download/pigment/%{name}-%{version}.tar.gz
 %endif
