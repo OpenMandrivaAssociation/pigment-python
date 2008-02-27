@@ -1,6 +1,6 @@
 %define	fversion	0.3
 
-%define svn	1089
+%define svn	0
 %if %svn
 %define release	%mkrel 0.%svn.1
 %else
@@ -9,7 +9,7 @@
 
 Summary:	Python bindings for Pigment
 Name:		pigment-python
-Version:	0.3.2.1
+Version:	0.3.2.2
 Release:	%{release}
 %if %svn
 Source0:	%{name}-%{svn}.tar.lzma
