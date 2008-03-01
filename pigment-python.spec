@@ -9,7 +9,7 @@
 
 Summary:	Python bindings for Pigment
 Name:		pigment-python
-Version:	0.3.2.2
+Version:	0.3.2.3
 Release:	%{release}
 %if %svn
 Source0:	%{name}-%{svn}.tar.lzma
