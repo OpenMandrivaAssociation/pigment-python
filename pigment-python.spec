@@ -9,7 +9,7 @@
 
 Summary:	Python bindings for Pigment
 Name:		pigment-python
-Version:	0.3.2.3
+Version:	0.3.3
 Release:	%{release}
 %if %svn
 Source0:	%{name}-%{svn}.tar.lzma
@@ -23,7 +23,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 %if %svn
 BuildRequires:	autoconf
 %endif
-BuildRequires:	gstreamer0.10-devel
+BuildRequires:	libgstreamer-devel >= 0.10
 BuildRequires:	libgstreamer0.10-plugins-base-devel
 BuildRequires:	gstreamer0.10-python
 BuildRequires:	glib2-devel
