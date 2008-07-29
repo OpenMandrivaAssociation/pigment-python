@@ -1,28 +1,26 @@
 %define	fversion	0.3
 
+%define rel	1
 %define svn	0
 %if %svn
-%define release	%mkrel 0.%svn.1
+%define release		%mkrel 0.%svn.%rel
+%define distname	%{name}-%{svn}.tar.lzma
+%define dirname		%{name}
 %else
-%define release	%mkrel 4
+%define release		%mkrel %rel
+%define distname	%{name}-%{version}.tar.bz2
+%define dirname		%{name}-%{version}
 %endif
 
 Summary:	Python bindings for Pigment
 Name:		pigment-python
-Version:	0.3.3
+Version:	0.3.5
 Release:	%{release}
-%if %svn
-Source0:	%{name}-%{svn}.tar.lzma
-%else
-Source0:	http://elisa.fluendo.com/static/download/pigment/%{name}-%{version}.tar.gz
-%endif
+Source0:	http://elisa.fluendo.com/static/download/pigment/%{distname}
 License:	LGPLv2+
 Group:		Development/Python
 URL:		http://elisa.fluendo.com/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-%if %svn
-BuildRequires:	autoconf
-%endif
 BuildRequires:	libgstreamer-devel >= 0.10
 BuildRequires:	libgstreamer0.10-plugins-base-devel
 BuildRequires:	gstreamer0.10-python
@@ -50,11 +48,7 @@ Requires:	libpigment-devel
 Python bindings for the Pigment library.
 
 %prep
-%if %svn
-%setup -q -n %{name}
-%else
-%setup -q
-%endif
+%setup -q -n %{dirname}
 
 %build
 %if %svn
