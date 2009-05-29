@@ -14,7 +14,7 @@
 
 Summary:	Python bindings for Pigment
 Name:		pigment-python
-Version:	0.3.11
+Version:	0.3.12
 Release:	%{release}
 Source0:	http://elisa.fluendo.com/static/download/pigment/%{distname}
 License:	LGPLv2+
