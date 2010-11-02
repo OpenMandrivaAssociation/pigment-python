@@ -1,6 +1,6 @@
 %define	fversion	0.3
 
-%define rel	1
+%define rel	2
 %define svn	0
 %if %svn
 %define release		%mkrel 0.%svn.%rel
