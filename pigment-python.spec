@@ -7,7 +7,7 @@ Release:	4
 Source0:	http://elisa.fluendo.com/static/download/pigment/%{name}-%{version}.tar.bz2
 License:	LGPLv2+
 Group:		Development/Python
-URL:		http://elisa.fluendo.com/
+URL:		https://elisa.fluendo.com/
 BuildRequires:	pkgconfig(gstreamer-0.10)
 BuildRequires:	pkgconfig(gstreamer-plugins-base-0.10)
 BuildRequires:	gstreamer0.10-python
