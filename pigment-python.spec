@@ -8,6 +8,11 @@ Source0:	http://elisa.fluendo.com/static/download/pigment/%{name}-%{version}.tar
 License:	LGPLv2+
 Group:		Development/Python
 URL:		https://elisa.fluendo.com/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gstreamer-0.10)
 BuildRequires:	pkgconfig(gstreamer-plugins-base-0.10)
 BuildRequires:	gstreamer0.10-python
